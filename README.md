@@ -19,7 +19,7 @@ Also, by thinking about the future of data analysis, 3D representations add move
 
 Tufte is saying that what is important in analytical thinking is to admire excellence ask ourselves how did they do what they did? Understand excellence! Another point is to have an open mind, not an empty mind. It means that other ideas are always good to explore and entertain. The responsibility of data analysis is to make right conclusion; by torturing the data, it tells just about anything that we want, which is not necessarily right. 
 
-## _Data Visualization and Data Science (EMBL) - Hadley Wickham
+## _Data Visualization and Data Science (EMBL)_ - Hadley Wickham
 
 In this short video, Wickham introduced different technologies/techniques which are basically R packages and commands that allow the manipulation and analysis of data to be a little easier. Those techniques are: ggplot, gapminder, geom_point, scale_x_log10, group_split(year), gap_plot, animate, ggseq.
 
