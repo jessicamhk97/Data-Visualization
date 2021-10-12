@@ -1,4 +1,4 @@
-# DATA VISUALIZATION CLASS
+# DATA VISUALIZATION - FALL 2021
 
 
 ## _Journalism in Age of Data_ - Geoff McGhee (2011)
