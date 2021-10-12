@@ -227,36 +227,66 @@ pie(pie.sales, col = gray(seq(0.3,1.0,length=6)))
 
 ### Assignment 3: Anscombe01
 
-### Assignment 4
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
 ```markdown
-Syntax highlighted code block
+## Anscombe (1973) Quartlet
 
-# Header 1
-## Header 2
-### Header 3
+data(anscombe)  # Load Anscombe's data
+View(anscombe) # View the data
+summary(anscombe)
 
-- Bulleted
-- List
+## Simple version
+plot(anscombe$x1,anscombe$y1)
+summary(anscombe)
 
-1. Numbered
-2. List
+# Create four model objects
+lm1 <- lm(y1 ~ x1, data=anscombe)
+summary(lm1)
+lm2 <- lm(y2 ~ x2, data=anscombe)
+summary(lm2)
+lm3 <- lm(y3 ~ x3, data=anscombe)
+summary(lm3)
+lm4 <- lm(y4 ~ x4, data=anscombe)
+summary(lm4)
+plot(anscombe$x1,anscombe$y1)
+abline(coefficients(lm1))
+plot(anscombe$x2,anscombe$y2)
+abline(coefficients(lm2))
+plot(anscombe$x3,anscombe$y3)
+abline(coefficients(lm3))
+plot(anscombe$x4,anscombe$y4)
+abline(coefficients(lm4))
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+## Fancy version (per help file)
+
+ff <- y ~ x
+mods <- setNames(as.list(1:4), paste0("lm", 1:4))
+
+# Plot using for loop
+for(i in 1:4) {
+  ff[2:3] <- lapply(paste0(c("y","x"), i), as.name)
+  ## or   ff[[2]] <- as.name(paste0("y", i))
+  ##      ff[[3]] <- as.name(paste0("x", i))
+  mods[[i]] <- lmi <- lm(ff, data = anscombe)
+  print(anova(lmi))
+}
+
+sapply(mods, coef)  # Note the use of this function
+lapply(mods, function(fm) coef(summary(fm)))
+
+# Preparing for the plots
+op <- par(mfrow = c(2, 2), mar = 0.1+c(4,4,1,1), oma =  c(0, 0, 2, 0))
+
+# Plot charts using for loop
+for(i in 1:4) {
+  ff[2:3] <- lapply(paste0(c("y","x"), i), as.name)
+  plot(ff, data = anscombe, col = "red", pch = 21, bg = "orange", cex = 1.2,
+       xlim = c(3, 19), ylim = c(3, 13))
+  abline(mods[[i]], col = "blue")
+}
+mtext("Anscombe's 4 Regression data sets", outer = TRUE, cex = 1.5)
+par(op)
 ```
+![image](https://user-images.githubusercontent.com/81389378/136887232-8a13ef8c-9446-4da2-b4a7-7efd0aee277d.png)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jessicamhk97/Data-visualization/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Assignment 4
