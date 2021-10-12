@@ -29,6 +29,14 @@ He goes further by combining all the graphs to show the changes over the years; 
 
 Wickham goes ahead and gives us three reasons why people should code according to him. Those reasons are code is text, code is able to be read, and code is reproducible. When coding, we have the ability to copy and paste which makes it easier to communicate it and share it with others. Code can be criticized as well which leaves room for improvement. And thus, codes can be reproduced as many times as possible.
 
+## Big Data Analytics Pitfall & Overfitting and Overparameterization
+
+## Comparison of Different Styles of Data Visualization of Two Authors
+
+## _How to Improve Your Relationship With Your Future Self_ - Jake Bowers (2016)
+
+## Music Visualization - Stephen Malinowski
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
