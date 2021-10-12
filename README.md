@@ -35,7 +35,15 @@ Wickham goes ahead and gives us three reasons why people should code according t
 
 ### _How to Improve Your Relationship With Your Future Self_ - Jake Bowers (2016)
 
-### [link](https://www.youtube.com/watch?v=Edg910m-3o8) - Stephen Malinowski
+### Rachmaninoff, Prelude in C-sharp minor (opus 3 no. 2) [link](https://www.youtube.com/watch?v=Edg910m-3o8) - Stephen Malinowski
+
+In this video, we can observe how the shapes move with every sound that we are hearing. Shapes are brightened when they get to the middle of the display and that is when we also hear the sound. We can observe different colors and different shapes and as they differ from each other, the sound that is heard is also different. 
+
+Another observation from this video is that the oval shapes open up when the sound comes out and when a new sound, different and loud comes, there are different shapes that come together and create a rectangle. 
+
+Colors are different when the sound is either strong or light. There is  a combination of green, bleu, violet for stronger sounds and a combination of orange, pink and light bleu for lighter sounds. Those color combinations are only for oval shapes. For lines and rectangles, the colors are slightly different but still have a similar tone. 
+
+At some point, the sound is accelarated and the shapes change at the same time. Now, there are lines with different colors and sizes that appear as the sound goes on. Also, a different movement can be observed, different from what we have seen so far. The sizes of the rectangles are bigger as well. 
 
 ### Assignment 1: Leaf of Fall
 
