@@ -1,4 +1,6 @@
 # DATA VISUALIZATION CLASS
+
+
 ## _Journalism in Age of Data_ - Geoff McGhee (2011)
 
 These two journalists use the principle that vision is the best way for individuals to assess the world around them. Capturing images of the surroundings allow the brain to actually know what is going and understand the information presented. The goal is to use the complicated data given and try to make it look like something the audience can easily relate to. It is more about how it looks like. Data in itself is raw and difficult to see or understand what is happening. Data visualization allows to put the raw data into context. By using graphics, art, charts, etc. the information found in the raw data appears to be easier to understand. 
