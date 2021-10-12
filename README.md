@@ -19,6 +19,16 @@ Also, by thinking about the future of data analysis, 3D representations add move
 
 Tufte is saying that what is important in analytical thinking is to admire excellence ask ourselves how did they do what they did? Understand excellence! Another point is to have an open mind, not an empty mind. It means that other ideas are always good to explore and entertain. The responsibility of data analysis is to make right conclusion; by torturing the data, it tells just about anything that we want, which is not necessarily right. 
 
+## _Data Visualization and Data Science (EMBL) - Hadley Wickham
+
+In this short video, Wickham introduced different technologies/techniques which are basically R packages and commands that allow the manipulation and analysis of data to be a little easier. Those techniques are: ggplot, gapminder, geom_point, scale_x_log10, group_split(year), gap_plot, animate, ggseq.
+
+Hadley Wickham is using a visualization project and tries to explain how to use R commands to get to those results. He starts with the raw data. He uses different command to filter to the data to only one year (2015). He then uses ggplot2 to plot the data and see. He keeps going by rescaling, adding colors, placing smaller countries first so that they are not hidden by larger countries. The same commands can be used to look at other years individually. 
+
+He goes further by combining all the graphs to show the changes over the years; instead of comparing them individually, he creates a type of slideshow that shows all the graphs from different years and that makes the comparison easier. He also put all the plots from different years on one graph. That method is not clear enough to analyze and compare according to me, but it might me efficient to do so for certain reasons.
+
+Wickham goes ahead and gives us three reasons why people should code according to him. Those reasons are code is text, code is able to be read, and code is reproducible. When coding, we have the ability to copy and paste which makes it easier to communicate it and share it with others. Code can be criticized as well which leaves room for improvement. And thus, codes can be reproduced as many times as possible.
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
