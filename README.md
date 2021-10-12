@@ -40,17 +40,17 @@ Wickham goes ahead and gives us three reasons why people should code according t
 ### Assignment 1: Leaf of Fall
 
 ```markdown
-Install packages
+# Install packages
 
 install.packages("gsubfn")
 install.packages("tidyverse")
 library(gsubfn)
 library(tidyverse)
 
-Define elements in plant art
-Each image corresponds to a different axiom, rules, angle and depth
+# Define elements in plant art
+# Each image corresponds to a different axiom, rules, angle and depth
 
-Leaf of Fall
+## Leaf of Fall
 
 axiom="X"
 rules=list("X"="F-[[X]+X]+F[+FX]-X", "F"="FF")
@@ -62,8 +62,8 @@ actions=str_extract_all(axiom, "\\d*\\+|\\d*\\-|F|L|R|\\[|\\]|\\|") %>% unlist
 status=data.frame(x=numeric(0), y=numeric(0), alfa=numeric(0))
 points=data.frame(x1 = 0, y1 = 0, x2 = NA, y2 = NA, alfa=90, depth=1)
 
-Generating data
-Note: may take a minute or two
+# Generating data
+# Note: may take a minute or two
 
 for (action in actions)
 {
@@ -222,6 +222,8 @@ pie(pie.sales, col = gray(seq(0.3,1.0,length=6)))
 # Exercise: Can you generate these charts individually?  Be sure to 
 # work on the layout and margins
 ```
+![image](https://user-images.githubusercontent.com/81389378/136886542-d1e76e56-b27d-4b19-a3e5-c9223ee8b290.png)
+![image](https://user-images.githubusercontent.com/81389378/136886573-cfd2b5e0-c626-45f2-93fa-42f562eed8bf.png)
 
 ### Assignment 3: Anscombe01
 
