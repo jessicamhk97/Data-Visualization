@@ -35,7 +35,7 @@ Wickham goes ahead and gives us three reasons why people should code according t
 
 ### _How to Improve Your Relationship With Your Future Self_ - Jake Bowers (2016)
 
-### Music Visualization - Stephen Malinowski
+### [link](https://www.youtube.com/watch?v=Edg910m-3o8) - Stephen Malinowski
 
 ### Assignment 1: Leaf of Fall
 
