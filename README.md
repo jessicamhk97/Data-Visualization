@@ -111,7 +111,8 @@ ggplot() +
         axis.title=element_blank(),
         axis.text=element_blank())
 ```
-        
+ ![image](https://user-images.githubusercontent.com/81389378/136884889-0556d144-f3f7-41b2-9acd-37e61c6a2bb9.png)
+ 
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
