@@ -109,7 +109,7 @@ for (action in actions)
 ggplot() +
   geom_segment(aes(x = x1, y = y1, xend = x2, yend = y2),
                lineend = "round",
-               color="burlywood3", # Set Fall color?
+               color="red", # Set Fall color?
                data=na.omit(points)) +
   coord_fixed(ratio = 1) +
   theme(legend.position="none",
