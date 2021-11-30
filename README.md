@@ -296,4 +296,47 @@ par(op)
 ```
 ![image](https://user-images.githubusercontent.com/81389378/136887232-8a13ef8c-9446-4da2-b4a7-7efd0aee277d.png)
 
-### Assignment 4
+### Codes used for Final project
+
+```markdown
+
+## Recoding the Likert scale
+library("likert")
+library("dplyr")
+library("tidyverse")
+library("magrittr")
+
+project_data3 <- project_data %>% mutate_at(c((9:26)), funs(recode(., "Strongly agree" = 1, "Agree" = 2, "Uncertain" = 3, "Disagree" = 4, "Strongly disagree" =5)))
+
+## pie chart
+par(mar=c(0, 2, 1, 2), xpd=FALSE, cex=0.5)
+GENDERS <- c(25, 15)
+names(GENDERS) <- c("Female", "Male")
+pct = round(GENDERS/sum(GENDERS)*100)
+new_labels = paste(names(GENDERS), "-", pct, "%", sep = "")
+pie(GENDERS, labels = new_labels, col = rainbow(2), main = "GENDER PROPORTION")
+
+## Bar chart
+project_data3 %>% filter(QUESTION.16 == "1" |
+                           QUESTION.16 == "2" |
+                           QUESTION.16 == "3" |
+                           QUESTION.16 == "4" |
+                           QUESTION.16 == "5") %>%
+  ggplot(aes(QUESTION.16, fill = GENDER)+
+  geom_bar(position = "dodge", alpha = 2)+
+  theme_bw()+
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank())+
+  labs(title = "Social Distancing and Isolation", x = "Scale", y = "Number of Students")
+  
+  project_data3 %>% filter(QUESTION.25 %in% c("1", "2", "3", "4", "5")) %>%
+  ggplot(aes(LEVEL.EDUCATION))+
+  geom_bar(aes(fill = LEVEL.EDUCATION), alpha = 2)+
+  facet_wrap(~ QUESTION.25)+
+  theme_bw()+
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        legend.position = "none")+
+  labs(title = "Continuing with The online Learning System in the future", x = "Scale", y = "Number of Students")
+```
+
