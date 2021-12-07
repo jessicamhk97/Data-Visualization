@@ -306,7 +306,9 @@ library("dplyr")
 library("tidyverse")
 library("magrittr")
 
-project_data3 <- project_data %>% mutate_at(c((9:26)), funs(recode(., "Strongly agree" = 1, "Agree" = 2, "Uncertain" = 3, "Disagree" = 4, "Strongly disagree" =5)))
+project_data3 <- project_data %>% mutate_at(c((9:26)), 
+funs(recode(., "Strongly agree" = 1, "Agree" = 2, 
+"Uncertain" = 3, "Disagree" = 4, "Strongly disagree" =5)))
 
 ## pie chart
 par(mar=c(0, 2, 1, 2), xpd=FALSE, cex=0.5)
