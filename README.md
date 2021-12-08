@@ -454,8 +454,6 @@ project_data3 %>% filter(QUESTION.16 == "1" |
   theme_bw()+
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank())+
-  labs(title = "Social Distancing and Isolation", x = "Scale", y = "Number of Students")
+  labs(title = "Continuing with the Online Learning System in the Future", x = "Scale", y = "Number of Students")
   
 ```
-
-t
