@@ -430,7 +430,7 @@ project_data3 %>%
            theme_bw()+
            labs(title = "Academic performance took a hit with the online learning system", x = "scale", y = "Number of students")
 
-## Bar chart
+# Social Distancing and Isolation
 project_data3 %>% filter(QUESTION.16 == "1" |
                            QUESTION.16 == "2" |
                            QUESTION.16 == "3" |
@@ -443,14 +443,18 @@ project_data3 %>% filter(QUESTION.16 == "1" |
         panel.grid.minor = element_blank())+
   labs(title = "Social Distancing and Isolation", x = "Scale", y = "Number of Students")
   
-  project_data3 %>% filter(QUESTION.25 %in% c("1", "2", "3", "4", "5")) %>%
-  ggplot(aes(LEVEL.EDUCATION))+
-  geom_bar(aes(fill = LEVEL.EDUCATION), alpha = 2)+
-  facet_wrap(~ QUESTION.25)+
+  # Continuing with the Online Learning System
+  project_data3 %>% filter(QUESTION.25 == "1" |
+                           QUESTION.25 == "2" |
+                           QUESTION.25 == "3" |
+                           QUESTION.25 == "4" |
+                           QUESTION.25 == "5") %>%
+  ggplot(aes(QUESTION.25, fill = GENDER)+
+  geom_bar(position = "dodge", alpha = 2)+
   theme_bw()+
   theme(panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank(),
-        legend.position = "none")+
-  labs(title = "Continuing with The online Learning System in the future", x = "Scale", y = "Number of Students")
+        panel.grid.minor = element_blank())+
+  labs(title = "Social Distancing and Isolation", x = "Scale", y = "Number of Students")
+  
 ```
 
