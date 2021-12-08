@@ -341,6 +341,53 @@ pct2 = round(EDUCATION.LEVEL/sum(EDUCATION.LEVEL)*100)
 new_labels2 = paste(names(EDUCATION.LEVEL), "=", pct2, "%", sep = "")
 pie(EDUCATION.LEVEL, labels = new_labels2, col = rainbow(3), main = "EDUCATIONAL LEVEL")
 
+# Digital tools BC19
+project.data7 <- project_data3 %>% group_by(DIGITAL.TOOLS.BC19) %>% summarise(counts = n(), percentage = n()/nrow(project_data3))
+par(mar=c(0, 2, 1, 2), xpd=FALSE, cex=1)
+TOOLS.BC19 <- c(21, 19, 0)
+names(TOOLS.BC19) <- c("Laptop","Mobile Phone", "IPad")
+pct2 = round(TOOLS.BC19/sum(TOOLS.BC19)*100)
+new_labels2 = paste(names(TOOLS.BC19), "-", pct2, "%", sep = "")
+pie(TOOLS.BC19, labels = new_labels2, col = rainbow(3), main = "DIGITAL TOOLS USED BEFORE COVID-19"
+
+# Digital tools AC19
+project.data7 <- project_data3 %>% group_by(DIGITAL.TOOLS.AC19) %>% summarise(counts = n(), percentage = n()/nrow(project_data3))
+par(mar=c(0, 2, 1, 2), xpd=FALSE, cex=1)
+TOOLS.AC19 <- c(28, 11, 1)
+names(TOOLS.AC19) <- c("Laptop","Mobile Phone", "IPad")
+pct2 = round(TOOLS.AC19/sum(TOOLS.AC19)*100)
+new_labels2 = paste(names(TOOLS.AC19), "-", pct2, "%", sep = "")
+pie(TOOLS.AC19, labels = new_labels2, col = rainbow(3), main = "DIGITAL TOOLS USED AFTER COVID-19"
+
+# Time Spent on Digital tools BC19
+project.data7 <- project_data3 %>% group_by(HOURS.ON.TOOLS.BC19) %>% summarise(counts = n(), percentage = n()/nrow(project_data3))
+par(mar=c(0, 2, 1, 2), xpd=FALSE, cex=1)
+TIME.BC19 <- c(3, 8, 15, 14)
+names(TIME.BC19) <- c("1 TO 3","10+", "4 TO 6", "7 TO 9")
+pct2 = round(TIME.BC19/sum(TIME.BC19)*100)
+new_labels2 = paste(names(TIME.BC19), "-", pct2, "%", sep = "")
+pie(TIME.BC19, labels = new_labels2, col = rainbow(4), main = "TIME SPENT ON DIGITAL TOOLS BEFORE COVID-19"
+
+# Time spent on Digital tools AC19
+project.data7 <- project_data3 %>% group_by(HOURS.ON.TOOLS.AC19) %>% summarise(counts = n(), percentage = n()/nrow(project_data3))
+par(mar=c(0, 2, 1, 2), xpd=FALSE, cex=1)
+TIME.AC19 <- c(3, 8, 15, 14)
+names(TIME.AC19) <- c("1 TO 3","10+", "4 TO 6", "7 TO 9")
+pct2 = round(TIME.AC19/sum(TIME.AC19)*100)
+new_labels2 = paste(names(TIME.AC19), "-", pct2, "%", sep = "")
+pie(TIME.AC19, labels = new_labels2, col = rainbow(4), main = "TIME SPENT ON DIGITAL TOOLS AFTER COVID-19"
+
+# Students' Concentration BC19
+
+
+# Students' Concentration AC19
+
+
+# Sleeping Habits BC19
+
+
+# Sleeping Habits AC19
+
 ## Bar chart
 project_data3 %>% filter(QUESTION.16 == "1" |
                            QUESTION.16 == "2" |
