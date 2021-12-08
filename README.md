@@ -311,12 +311,35 @@ funs(recode(., "Strongly agree" = 1, "Agree" = 2,
 "Uncertain" = 3, "Disagree" = 4, "Strongly disagree" =5)))
 
 ## pie chart
+# gender pie chart
+project.data4 <- project_data3 %>% group_by(GENDER) %>% 
+summarise(counts = n(), percentage = n()/nrow(project_data3))
 par(mar=c(0, 2, 1, 2), xpd=FALSE, cex=0.5)
 GENDERS <- c(25, 15)
 names(GENDERS) <- c("Female", "Male")
 pct = round(GENDERS/sum(GENDERS)*100)
 new_labels = paste(names(GENDERS), "-", pct, "%", sep = "")
 pie(GENDERS, labels = new_labels, col = rainbow(2), main = "GENDER PROPORTION")
+
+# age pie chart
+project.data5 <- project_data3 %>% group_by(AGE.RANGE) %>% 
+summarise(counts = n(), percentage = n()/nrow(project_data3))
+par(mar=c(0, 2, 1, 2), xpd=FALSE, cex=1)
+AGE <- c(20, 18, 2)
+names(AGE) <- c("17-24", "25-29", "30+")
+pct1 = round(AGE/sum(AGE)*100)
+new_labels1 = paste(names(AGE), "=", pct1, "%", sep = "")
+pie(AGE, labels = new_labels1, col = rainbow(3), main = "AGE RANGE")
+
+# education level pie chart
+project.data6 <- project_data3 %>% group_by(LEVEL.EDUCATION) %>% 
+summarise(counts = n(), percentage = n()/nrow(project_data3))
+par(mar=c(0, 2, 1, 2), xpd=FALSE, cex=1)
+EDUCATION.LEVEL <- c(3, 19, 18)
+names(EDUCATION.LEVEL) <- c("Associate", "Graduate", "Undergraduate")
+pct2 = round(EDUCATION.LEVEL/sum(EDUCATION.LEVEL)*100)
+new_labels2 = paste(names(EDUCATION.LEVEL), "=", pct2, "%", sep = "")
+pie(EDUCATION.LEVEL, labels = new_labels2, col = rainbow(3), main = "EDUCATIONAL LEVEL")
 
 ## Bar chart
 project_data3 %>% filter(QUESTION.16 == "1" |
