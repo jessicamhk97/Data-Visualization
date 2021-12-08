@@ -388,6 +388,28 @@ pie(TIME.AC19, labels = new_labels2, col = rainbow(4), main = "TIME SPENT ON DIG
 
 # Sleeping Habits AC19
 
+
+# Importance of Face-to-Face
+project_data3 %>% 
+  ggplot(aes(QUESTION.18))+
+           geom_bar(fill = "#546B3C99")+
+           theme_bw()+
+           labs(title = "Face-to-Face learning strengthens the social personality of students", x = "scale", y = "Number of students")
+
+# Exams and Assignments online
+project_data3 %>% 
+  ggplot(aes(QUESTION.23))+
+           geom_bar(fill = "#546B3C99")+
+           theme_bw()+
+           labs(title = "Online exams and quizzes are not comfortable and make students nervous", x = "scale", y = "Number of students")
+
+# Academic Performance
+project_data3 %>% 
+  ggplot(aes(QUESTION.24))+
+           geom_bar(fill = "#546B3C99")+
+           theme_bw()+
+           labs(title = "Academic performance took a hit with the online learning system", x = "scale", y = "Number of students")
+
 ## Bar chart
 project_data3 %>% filter(QUESTION.16 == "1" |
                            QUESTION.16 == "2" |
