@@ -378,16 +378,36 @@ new_labels2 = paste(names(TIME.AC19), "-", pct2, "%", sep = "")
 pie(TIME.AC19, labels = new_labels2, col = rainbow(4), main = "TIME SPENT ON DIGITAL TOOLS AFTER COVID-19"
 
 # Students' Concentration BC19
-
+project_data3 %>% 
+  ggplot(aes(QUESTION.10))+
+           geom_bar(fill = "#97B3C6")+ 
+           coord_flip()+
+           theme_bw()+
+           labs(title = "Concentration when using digital tools before Covid=19", x = "scale", y = "Number of students")
 
 # Students' Concentration AC19
-
+project_data3 %>% 
+  ggplot(aes(QUESTION.11))+
+           geom_bar(fill = "#97B3C6")+ 
+           coord_flip()+
+           theme_bw()+
+           labs(title = "Concentration when using digital tools after Covid=19", x = "scale", y = "Number of students")
 
 # Sleeping Habits BC19
-
+project_data3 %>% 
+  ggplot(aes(QUESTION.12))+
+           geom_bar(fill = "#97B3C6")+ 
+           coord_flip()+
+           theme_bw()+
+           labs(title = "Sleeping habits before Covid-19", x = "scale", y = "Number of students")
 
 # Sleeping Habits AC19
-
+project_data3 %>% 
+  ggplot(aes(QUESTION.13))+
+           geom_bar(fill = "#97B3C6")+ 
+           coord_flip()+
+           theme_bw()+
+           labs(title = "Sleeping habits after Covid-19", x = "scale", y = "Number of students")
 
 # Importance of Face-to-Face
 project_data3 %>% 
